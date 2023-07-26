@@ -22,15 +22,15 @@ const Header = () => {
   return (
     <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
       <Item key="home" icon={<AppstoreOutlined />}>
-        <Link exact to='/' >Home</Link>
+        <Link to='/' >Home</Link>
       </Item>
 
       <Item key="register" icon={<UserAddOutlined />} className="float-right">
-      <Link exact to='/register' >Register</Link>
+        <Link to='/register' >Register</Link>
       </Item>
 
       <Item key="login" icon={<UserOutlined />} className="float-right">
-      <Link exact to='/login' >Login</Link>
+        <Link to='/login' >Login</Link>
       </Item>
 
       <SubMenu icon={<SettingOutlined />} title="Username">
